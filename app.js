@@ -68,11 +68,13 @@ function timeOut(){
     duration--;
     timer.innerHTML=duration;
     if(duration===0 && scores<21){
-        remarks.innerHTML=`GAME OVER <em> try hitting the top score next time</em>😉 `;
+        container.innerHTML=`GAME OVER <em> You were almost there. <br> Tip: Try double clicking/tapping</em>😉 `;
         h3.innerHTML=" ";
+        remarks.innerHTML=" ";
         endGame();
     }else if(duration===0 && scores>=21){
-        remarks.innerHTML="COngatulations🎉㊗";
+        remarks.innerHTML=" ";
+        container.innerHTML="Congatulations🎉㊗";
         endGame();
     }
 };
@@ -82,5 +84,9 @@ function endGame(){
     duration=25;
     clearInterval(moveId);
     clearInterval(timerId);
-    scores=0
+    scores=0;
+    alert(`Your score is ${progress.innerHTML}`);
+    setTimeout(()=>{
+        window.location.reload();
+    },4000);
 }
