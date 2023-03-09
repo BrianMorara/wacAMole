@@ -1,4 +1,4 @@
-alert("Click/tap the mole before it dissappears. PRESS START TO PLAY.")
+alert("Click/tap the mole before it dissappears. PRESS START TO PLAY.You have 25 seconds");
 const container=document.querySelector(".container");
 const progress=document.querySelector(".progress");
 const timer=document.getElementById('timer');
