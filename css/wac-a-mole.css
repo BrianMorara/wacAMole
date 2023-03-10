@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image:linear-gradient(to right,#d4145a,#fbb03b);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 body {
-  color: hsl(0, 6%, 55%);
-  background-color: hsl(0, 0%, 0%);
+  color: hsl(251, 85%, 13%);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -18,15 +21,21 @@ body {
   margin: 0.3125rem auto 0;
   width: fit-content;
   height: fit-content;
+  background: linear-gradient(#c33764,#1d2671);
+  border-radius: 3rem;
 }
 .all .start {
   margin-right: 1.25rem;
   outline: none;
   border: none;
-  background: hsl(300, 100%, 25%);
+  background: hsl(300, 28%, 10%);
   color: rgb(15, 233, 29);
-  border-radius: 6.25rem;
-  box-shadow: inset 0.1875rem 0.1875rem 0rem;
+  border-radius: 50%;
+  width: 4rem;
+  box-shadow:inset 0rem 0rem 0.9rem hsl(300, 100%, 35%);
+}
+.all .progress{
+  border-radius: 50%;
 }
 .all #scoreBoard > h1 {
   font-size: 1.25rem;
@@ -37,8 +46,10 @@ body {
   letter-spacing: 0.3125rem;
 }
 .all #scoreBoard #timer {
-  color: hsl(348, 83%, 47%);
+  color: hsl(15, 88%, 16%);
   font-style: normal;
+  border-radius: 50%;
+  box-shadow:inset 0rem 0rem 0.9rem hsl(300, 100%, 35%);
 }
 .all #scoreBoard .remarks {
   color: rgb(37, 13, 108);
@@ -47,6 +58,7 @@ body {
 .container {
   width: fit-content;
   display: grid;
+  place-content: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin: 0 auto;
@@ -64,9 +76,6 @@ body {
   height: 9.375rem;
   box-shadow: 0.4375rem 0.4375rem 0.9375rem rgba(255, 255, 255, 0.7);
   background-image: url("../mole.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 @media (max-width: 37.5em) {
   .container {
@@ -76,4 +85,4 @@ body {
     height: 6.25rem;
     width: 5rem;
   }
-}/*# sourceMappingURL=wac-a-mole.css.map */
+}
